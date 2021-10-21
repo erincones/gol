@@ -127,7 +127,7 @@ window.addEventListener(`load`, () => {
 
   let cellSize = 10;
   let borderWidth = 1;
-  let borderColor = `#000000`;
+  let borderColor = `#707070`;
   let aliveColor = `#000000`;
   let deadColor = `#ffffff`;
 
