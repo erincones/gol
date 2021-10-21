@@ -1,0 +1,68 @@
+* {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+*, :after, :before {
+  box-sizing: border-box
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+
+h1, p, ul {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: .5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"], input[type="number"] {
+  max-width: 4rem;
+}
+
+section {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+}
+
+#board div {
+  box-sizing: border-box;
+}
+
+#board, #board div {
+  border-style: solid;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

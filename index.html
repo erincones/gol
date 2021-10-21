@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="application-name" content="The Game of Life">
+    <meta name="author" content="Erick Rincones">
+    <meta name="description" content="Cellular automaton devised by the British mathematician John Horton Conway in 1970.">
+    <meta name="keywords" content="game, of, life, cellular, automaton, John, Horton, Conway, mathematics">
+
+    <title>The Game of Life</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style id="style"></style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>The Game of Life</h1>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Description, options and information -->
+      <aside>
+        <p>Cellular automaton devised by the British mathematician John Horton Conway in 1970.</p>
+
+        <!-- Options -->
+        <ul>
+          <li>
+            <label for="wrap">Wrap: </label>
+            <input id="wrap" type="checkbox">
+          </li>
+          <li>
+            <label for="rows">Rows: </label>
+            <input id="rows" type="number" inputmode="numeric" min="1" step="1">
+          </li>
+          <li>
+            <label for="cols">Columns: </label>
+            <input id="cols" type="number" inputmode="numeric" min="1" step="1">
+          </li>
+          <li>
+            <label for="freq">Frequency: </label>
+            <input id="freq" type="number" inputmode="numeric" min="1" step="1">
+          </li>
+        </ul>
+
+        <!-- Controlls and information -->
+        <ul>
+          <li>
+            <button id="clear" type="button">Clear</button>
+          </li>
+          <li>
+            <button id="random" type="button">Random</button>
+          </li>
+          <li>
+            <button id="play-stop" type="button">Play</button>
+          </li>
+          <li>
+            <button id="next" type="button">Next</button>
+          </li>
+          <li>
+            <label for="gens">Generations: </label>
+            <input id="gens" type="text" readonly="">
+          </li>
+          <li>
+            <label for="cells">Cells: </label>
+            <input id="cells" type="text" readonly="">
+          </li>
+          <li>
+            <label for="alive">Alive: </label>
+            <input id="alive" type="text" readonly="">
+          </li>
+          <li>
+            <label for="dead">Dead: </label>
+            <input id="dead" type="text" readonly="">
+          </li>
+        </ul>
+
+        <!-- Style -->
+        <ul>
+          <li>
+            <label for="cell-size">Cell size: </label>
+            <input id="cell-size" type="number" inputmode="numeric" min="1" step="1">
+          </li>
+          <li>
+            <label for="border-width">Border width: </label>
+            <input id="border-width" type="number" inputmode="numeric" min="0" step="1">
+          </li>
+          <li>
+            <label for="border-color">Border color: </label>
+            <input id="border-color" type="color">
+          </li>
+          <li>
+            <label for="alive-color">Live color: </label>
+            <input id="alive-color" type="color">
+          </li>
+          <li>
+            <label for="dead-color">Dead color: </label>
+            <input id="dead-color" type="color">
+          </li>
+          <li>
+            <button id="swap-colors">Swap colors</button>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Board -->
+      <section>
+        <div id="board"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p id="coords">Row: - Col: -</p>
+      <p>Copyright © <span id="year"></span> <a href="https://github.com/erincones" target="noopener noreferrer">Erick Rincones</a>. Licensed under <a href="https://github.com/erincones/gol/blob/master/LICENSE" target="noopener noreferrer">the MIT License</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
