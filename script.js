@@ -113,7 +113,7 @@ window.addEventListener(`load`, () => {
   let gameID = 0;
   let wrap = true;
   let rows = 25;
-  let cols = 25;
+  let cols = 35;
   let freq = 10;
 
   // Information
